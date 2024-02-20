@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tela-coleta.component.scss']
 })
 export class TelaColetaComponent implements OnInit {
-
+  texto :String ='oi'
+  cor:String = '#0A93BE'
   constructor() { }
 
   ngOnInit(): void {
