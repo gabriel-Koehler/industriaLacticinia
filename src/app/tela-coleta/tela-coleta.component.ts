@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class TelaColetaComponent implements OnInit {
-
   cor: String = "#0A93BE"
   texto: String = "Formulário de Coleta"
   data: String = ""
@@ -17,7 +16,6 @@ export class TelaColetaComponent implements OnInit {
   densidade: String = ""
   bacterias: String = ""
   dados: String = ""
-
   ngOnInit(): void {
   }
 }
