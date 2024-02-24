@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./fundo.component.scss']
 })
 export class FundoComponent implements OnInit {
-  @Input() texto:String='titulo'
-  @Input() cor:String='#0A93BE'
+  @Input() texto:String=''
+  @Input() cor:String=''
   constructor() { }
 
   ngOnInit(): void {
