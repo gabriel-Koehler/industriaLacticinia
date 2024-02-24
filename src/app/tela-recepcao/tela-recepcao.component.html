@@ -1,1 +1,41 @@
-<p>tela-recepcao works!</p>
+<div class="flex">
+    <app-fundo [cor]='cor' [texto]='texto'></app-fundo>
+    <div class="w-full h-screen  flex justify-center ">
+        <div class="flex flex-col justify-between">
+
+            <div class="pt-20 text-xl w-full flex flex-col justify-center gap-12">
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="dataEHoraDaDescarga">Data e Hora de Descarga</label>
+                    <input id="dataEHoraDaDescarga" class="w-[70%]" type="text" pInputText [(ngModel)]="dataEHoraDaDescarga">
+                </div>
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="temperatura">Temperatura</label>
+                    <input id="temperatura" class="w-[70%]" type="text" pInputText [(ngModel)]="temperatura">
+                </div>
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="bacteriasPorMl">Bactérias Por ml</label>
+                    <input id="bacteriasPorMl" class="w-[70%]" type="text" pInputText [(ngModel)]="bacteriasPorMl">
+                </div>
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="phDoLeite">Ph do Leite</label>
+                    <input id="phDoLeite" class="w-[70%]" type="text" pInputText [(ngModel)]="phDoLeite">
+                </div>
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="densidadeDoLeite">Densidade do Leite</label>
+                    <input id="densidadeDoLeite" class="w-[70%]" type="text" pInputText [(ngModel)]="densidadeDoLeite">
+                </div>
+                <div class="w-[670px] items-center flex justify-between">
+                    <label for="lactose">Lactose</label>
+                    <input id="lactose" class="w-[70%]" type="text" pInputText [(ngModel)]="lactose">
+                </div>
+            </div>
+
+
+            <div class="pb-10 flex justify-end">
+                <button (click)="enviar()" pButton pRipple label="Enviar" class="p-button-success"></button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

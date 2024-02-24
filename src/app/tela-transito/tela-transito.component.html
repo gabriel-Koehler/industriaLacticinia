@@ -1,5 +1,25 @@
-<div>
-    <!-- <app-fundo [cor]='#F8DA40' [texto]='Transito' ></app-fundo> -->
+<div class="flex">
+    <app-fundo [cor]='cor' [texto]='texto' ></app-fundo>
+    <div class="w-full h-screen  flex justify-center ">
+       <div class="flex flex-col justify-between">
 
+           <div class="pt-20 text-xl w-full flex flex-col justify-center gap-12">
+               <div class="w-[670px] items-center flex justify-between">
+                   <label for="temperatura">Temperatura</label>
+                   <input id="temperatura" class="w-[70%]" type="text" pInputText [(ngModel)]="temperatura">
+               </div>
+               <div class="w-[670px] items-center flex justify-between">
+                <label for="localizacao">Localização</label>
+                <input id="localizacao" class="w-[70%]" type="text" pInputText [(ngModel)]="localizacao">
+            </div>
+          </div>
+
+
+          <div class="pb-10 flex justify-end">
+            <button (click)="enviar()" pButton pRipple label="Enviar" class="p-button-success"></button>
+          </div>
+       </div>
+
+    </div>
 
 </div>
